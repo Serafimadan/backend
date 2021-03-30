@@ -8,9 +8,8 @@
 # misc
 .DS_Store
 compare.js
-config.js
 /frontend/.eslintcache
 /node_modules
-config.js
+
 
 
