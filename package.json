@@ -6,20 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node index",
-    "start": "node index.js",
+    "start": "node index",
     "lint": "eslint"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DegirmenciOmer/fellowship28.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DegirmenciOmer/fellowship28/issues"
-  },
-  "homepage": "https://github.com/DegirmenciOmer/fellowship28#readme",
   "dependencies": {
     "apollo-server": "^2.21.0",
     "bcryptjs": "^2.4.3",
