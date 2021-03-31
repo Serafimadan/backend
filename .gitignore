@@ -3,12 +3,12 @@
 # dependencies
 /node_modules
 /client/node_modules
-
+.env
+config.js
 
 # misc
 .DS_Store
 compare.js
-/frontend/.eslintcache
 /node_modules
 
 
