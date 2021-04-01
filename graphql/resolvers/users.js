@@ -2,14 +2,13 @@ const bcrypt = require('bcryptjs')
 const User = require('../../models/User')
 const jwt = require('jsonwebtoken')
 const { UserInputError } = require('apollo-server')
+const dotenv = require('dotenv')
+dotenv.config()
 
 const {
   validateRegisterInput,
   validateLoginInput,
 } = require('../../util/validators')
-
-// for decode the token
-const { SECRET_KEY } = require('../../config')
 
 function generateToken(user) {
   return jwt.sign(
@@ -19,7 +18,7 @@ function generateToken(user) {
       username: user.username,
       imageUrl: user.imageUrl,
     },
-    SECRET_KEY,
+    process.env.SECRET_KEY,
     { expiresIn: '1h' }
   )
 }
@@ -133,3 +132,4 @@ module.exports = {
 
   },
 }
+
